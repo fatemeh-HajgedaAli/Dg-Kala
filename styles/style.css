@@ -1,0 +1,791 @@
+/* style part */
+:root {
+--primary-font-family: 'vazir';
+/* colors */
+--color-app-background: #f2f2f2;
+--color-app-background-rgb: 242,242,242;
+--color-app-background-mid-dark: #fafafa;
+--color-app-background-mid-dark-rgb: 250,250,250;
+--color-app-background-dark: #f5f5f5;
+--color-app-background-dark-rgb: 245,245,245;
+--color-transparent: transparent;
+--color-transparent-rgb: 255,255,255;
+--color-ai-300: #2586ff;
+--color-ai-300-rgb: 37,134,255;
+--color-ai-400: #8f4aec;
+--color-ai-400-rgb: 143,74,236;
+--color-ai-500: #7f53ef;
+--color-ai-500-rgb: 127,83,239;
+--color-ai-700: #6000d9;
+--color-ai-700-rgb: 96,0,217;
+--color-ai-background: #ecedff;
+--color-ai-background-rgb: 236,237,255;
+--color-neutral-100: #f0f0f1;
+--color-neutral-100-rgb: 240,240,241;
+--color-neutral-200: #e0e0e2;
+--color-neutral-200-rgb: 224,224,226;
+--color-neutral-300: #c0c2c5;
+--color-neutral-300-rgb: 192,194,197;
+--color-neutral-400: #a1a3a8;
+--color-neutral-400-rgb: 161,163,168;
+--color-neutral-500: #81858b;
+--color-neutral-500-rgb: 129,133,139;
+--color-neutral-600: #62666d;
+--color-neutral-600-rgb: 98,102,109;
+--color-neutral-650: #424242;
+--color-neutral-650-rgb: 66,66,66;
+--color-neutral-700: #3f4064;
+--color-neutral-700-rgb: 63,64,100;
+--color-neutral-800: #23254e;
+--color-neutral-800-rgb: 35,37,78;
+--color-neutral-850: #212121;
+--color-neutral-850-rgb: 33,33,33;
+--color-neutral-900: #0c0c0c;
+--color-neutral-900-rgb: 12,12,12;
+--color-neutral-000: #fff;
+--color-neutral-000-rgb: 255,255,255;
+--color-dark-neutral-100: #323641;
+--color-dark-neutral-100-rgb: 50,54,65;
+--color-dark-neutral-200: #424650;
+--color-dark-neutral-200-rgb: 66,70,80;
+--color-dark-neutral-300: #525660;
+--color-dark-neutral-300-rgb: 82,86,96;
+--color-dark-neutral-400: #646770;
+--color-dark-neutral-400-rgb: 100,103,112;
+}
+* , *::after , * ::before{
+box-sizing: border-box;
+font-family: 'vazir';
+outline: none;
+margin: 0;
+padding: 0;
+}
+body{
+font-family: 'vazir';
+list-style-type: none;
+background:#fff;
+overflow-x: hidden;
+}
+a{
+text-decoration: none;
+}
+/* start header part from 71 */
+/* navigation Top  from 72 to 162*/
+.navigation{
+width: 85rem;
+height: 12rem;
+background-color: #fff;
+border-bottom: 1px solid #e0e0e2;
+position: fixed;
+margin-right: -1rem;
+}
+.topImage{
+display: inline-block;
+object-fit: cover;
+width: 85rem;
+position: relative;
+z-index: 1;
+}
+.digiLogo{
+width: 13rem;
+margin-right: 1rem;
+margin-top: 1rem;
+}
+.navTop{
+display: flex;
+flex-direction: row;
+font-family: 'vazir';
+gap: 2rem;
+margin-top: 3rem;
+}
+.searchingBox{
+margin-top: 0;
+display: flex;
+align-items: center;
+}
+.search{
+background-color: #ecedff;
+color: #81858b;
+text-align: start;
+padding-right: 4rem;
+font-size: 0.8rem;
+font-family: 'vazir';
+font-weight: bolder;
+width: 28rem;
+height: 3rem;
+outline: none;
+border-radius: 1rem;
+border: none;
+margin-top: 0.9rem;
+}
+.bi-search{
+position: absolute;
+margin-right: 2rem;
+margin-top: 0.5rem;
+font-size: 1.2rem; 
+font-family: 'vazir';
+color: #81858b;
+text-align: center;
+}
+.loginBtn{
+margin-top: 0.9rem;
+display: flex;
+align-items: center;
+}
+.login{
+width: 10rem;
+height: 3rem;
+border: 1px solid #e0e0e2;
+border-radius: 0.5rem;
+text-align: center; 
+font-size: 0.8rem; 
+font-family: 'vazir';
+font-weight: bolder;
+color: #0c0c0c;
+margin-right: 20rem;
+padding-bottom: 0.2rem;
+}
+.bi-box-arrow-in-left{
+position: absolute;
+margin-right: 20.5rem;
+font-size: 1.5rem; 
+color:#0c0c0c;
+text-align:start;
+}
+.bi-cart2{
+margin-right: 1rem;
+border-left:1px solid #e0e0e2;
+padding-left: 1rem;
+font-size: 1.5rem; 
+color:#0c0c0c; 
+transform: rotateY(176deg);
+}
+/* navigation botton from 155 to 213*/
+.navBottom{
+display: flex;
+margin-top: 1rem;
+font-size: 0.8rem;
+}
+.navName{
+font-family: 'vazir';
+font-size: 0.8rem;
+margin-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 0.1rem;
+color: #424242;
+}
+.bi-list{
+font-size: 1rem;
+padding-right: 1.5rem;
+}
+.navRight{
+display: flex;
+list-style-type: none;
+gap: 1rem;
+border-right: 1px solid #e0e0e2;
+padding-right: 0.5rem;
+text-align: center;
+align-items: center;
+font-family: 'vazir';
+padding-left: 0.4rem;
+}
+.navLink{
+color: #a1a3a8;
+}
+.navLink i{
+padding-right: 0.5rem;
+}
+.navCenter{
+display: flex;
+list-style-type: none;
+gap: 0.5rem;
+border-right: 1px solid #e0e0e2;
+padding-right: 1rem;
+text-align: center;
+align-items: center;
+font-family: 'vazir';
+}
+.location{
+margin-top: 1rem;
+padding-right: 15rem;
+text-align: center;
+}
+.locationLink{
+color: #424242;
+font-family: 'vazir';
+font-size: 0.8rem;
+font-weight: bolder;
+}
+/* profile circle from 219 to 272 */
+.profiles{
+margin-right: 2rem;
+}
+.profilesMenu{
+display: flex;
+flex-direction: row;
+position: relative;
+list-style-type: none;
+z-index: -1;
+overflow: hidden;
+}
+.profileImage{
+display: flex;
+gap: 1rem;
+width: 5rem;
+border-radius: 100%;
+padding: 2.5px;
+margin-top: 9rem;
+border: 3px solid #6000d9;
+align-items: center;
+} 
+.profileLink{
+font-size: 0.7rem;
+font-family: 'vazir';
+color: #525660;
+display: flex;
+text-align: center;
+flex-wrap: wrap;
+padding: 1rem;
+margin-left: 3rem;
+}
+.leftIcon{
+display: block;
+background: #fff;
+width: 2.5rem;
+height: 2.5rem;
+text-align: center;
+margin-top: -7rem;
+margin-right: 77rem;
+padding: 0.5rem;
+border-radius: 100%;
+border: 1px solid #81858b;
+color: #81858b;
+box-shadow: 1px 2px 4px #81858b;
+}
+.leftIcon:hover{
+color: #212121;
+border: 2px solid #ff3807;
+font-weight: bolder;
+transition: all 250ms ease-in-out;
+cursor: pointer;
+}
+/* end header */
+/* start main part */
+/* main Header from 272 to 320*/
+.mainHeader{
+background-image: url(../pictures/خانم.webp);
+background-position:center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 50rem;
+width: 85rem;
+margin-top: 4rem;
+}
+.picureText{
+font-family: 'vazir';
+font-size: 3.5rem;
+font-weight: bolder;
+color: #fafafa;
+text-align: center;
+padding-right: 42rem;
+padding-top: 19rem;
+text-shadow: -1px 4px 3px rgb(51, 48, 48);
+}
+.picturePragraph{
+font-family: 'vazir';
+font-size: 1.5rem;
+font-weight: bold;
+color: #b80c0c;
+text-align: center;
+padding-right: 43rem;
+padding-top: 2rem;
+margin: 0px 12rem;
+text-shadow: -1px 2px 3px rgb(218, 217, 217);
+}
+.pictureBtn{
+display: block;
+width: 6rem;
+height: 2rem;
+background: #fff;
+border-radius: 1.2rem;
+padding: 0.2rem;
+margin-right: 59rem;
+margin-top: 1rem;
+text-align: center;
+box-shadow: 1px 2px 5px rgb(129, 126, 126);
+}
+.pictureLink{
+color: #333;
+font-size: 1rem;
+font-family: 'vazir';
+font-weight: bold;
+}
+/* icons part from 321 to 375 */
+.iconsMenu{
+display: flex;
+gap: 5rem; 
+margin-top: 1rem;
+margin-right: 6rem;
+justify-content: space-evenly;
+align-items: center;
+position: relative;
+z-index: -1;
+}
+.iconsLink{
+text-align: center;
+display: flex;
+justify-content: center;
+margin-left: 1rem;
+}
+.iconsImg{
+position: absolute;
+width: 5rem;
+border: 3px solid #db2f4e;
+border-radius: 100%;
+padding: 0.1rem;
+}
+.iconsText{
+display: inline-block;
+font-size: 0.8rem;
+font-family: 'vazir';
+font-weight: bold;
+padding-top: 5.5rem;
+color: #212121;
+}
+.signIcon{
+background: #e0e0e2;
+border-radius: 100%;
+padding: 0.5rem;
+box-shadow: 1px 2px 4px #81858b;
+cursor: pointer;
+width: 2rem;
+height: 2rem;
+margin-left: 1rem;
+}
+.bi-three-dots{
+color: #81858b;
+font-size: 1rem;
+text-align: center;
+}
+.textSign{
+    display: inline-block;
+    font-family: 'vazir';
+    font-weight: bolder;
+    font-size: 0.8rem;
+    text-align: start;
+    padding-top: 1.1rem;
+    margin-right: -1rem;
+}
+/* main part section top from 375to 453 */
+.offer{
+background: linear-gradient(225deg,#d22c4e,#ee384e 41.68%,#ef5662);
+height: 18rem;
+margin: 1rem 1rem 1rem;
+border-radius: 1rem;
+}
+.imageOffer{
+width: 6rem;
+margin-right: 3rem;
+margin-top: 1rem;
+}
+#offerTime{
+display: inline-block;
+font-size: 1.8rem;
+font-family: 'vazir';
+font-weight: bolder;
+color: #f5f5f5;
+padding-right:2.3rem;
+padding-top: 0.2rem;
+background:none;
+outline: none;
+border: none;
+}
+.offerMenu{
+display: flex;
+gap: 0.2rem;
+margin-top: -15.5rem;
+margin-right: 12rem;
+}
+.imagePart{
+width: 6rem;
+margin-top: 5rem;
+}
+.offerItem{
+display: flex;
+flex-direction: column;
+width: 10rem;
+height: 14rem;
+background-color: #fff;
+margin-right:1rem;
+border-radius: 1rem;
+align-items: center;
+justify-content: center;
+box-shadow: 1px 1px 5px #333;
+}
+.offerText{
+font-size: 0.8rem;
+font-family: 'vazir';
+color: #212121;
+text-align: justify;
+padding: 0.5rem;
+}
+.pricePart{
+display: flex;
+flex-direction: column;
+padding-right: 4rem;
+padding-bottom: 4rem;
+margin-top: 0.2rem;
+font-size: 0.8rem;
+font-family: 'vazir';
+color: #212121;
+}
+.priceBottom{
+color: #a1a3a8;
+}
+.offPrice{
+position: relative;
+top: -6rem;
+}
+.offerPrice{
+display: inline-block;
+background: #e2334e;
+color: #fafafa;
+font-size: 0.8rem;
+font-family: 'vazir';
+border-radius: 1rem;
+height: 1.5rem;
+text-align: center;
+width: 2rem;
+padding-top: 0.2rem;
+margin-top: -5.8rem;
+margin-left: 7rem;
+box-shadow: 0.5px 0.5px 5.4px #646770;
+}
+.offerMainIcon{
+display: block;
+background: #fff;
+width: 2.5rem;
+height: 2.5rem;
+text-align: center;
+margin-top: 5rem;
+margin-left: 0.2rem;
+padding: 0.5rem;
+border-radius: 100%;
+color: #81858b;
+box-shadow: 1px 2px 5px #333;
+}
+/* takhfifat from 467 to 537 */
+.sabadKharid{
+background-color: hsl(210, 14%, 91%);
+border-radius: 1rem;
+height: 6rem;
+margin-top: 4rem;
+}
+.imgKharid{
+width: 4rem;
+margin-right: 3rem;
+margin-top: 1rem;
+}
+.imgShegeftaneh {
+margin: 1rem;
+}
+.takhfifLink{
+display: flex;
+color: #fff;
+background: #029a49;
+width: 6rem;
+padding: 0.5rem;
+border-radius: 1rem;
+font-size: 0.8rem;
+font-family: 'vazir';
+margin: -3.5rem 26rem 1rem 1rem;
+}
+.takhfifMenu{
+display: flex;
+list-style-type: none;
+margin-right: 41rem;
+margin-top: -4rem;
+justify-content: flex-start;
+align-items: center;
+gap: 4rem;
+}
+.takhfifImg{
+width: 5.5rem;
+border-radius: 100%;
+padding: 0.5rem;
+margin-top: -1.2rem;
+}
+.takhfifItem{
+display: flex;
+}
+.takhfifPrice{
+background: #ed1944;
+font-size: 0.8rem;
+font-family: 'vazir';
+border-radius: 60%;
+color: #fff;
+margin-right: -5.8rem;
+margin-top: 2rem;
+padding: 0.3rem;
+width: 2rem;
+display: inline-block;
+height: 2rem;
+}
+.collectionBtn{
+background-color: #fff;
+color: #029a49;
+width: 10.5rem;
+padding: 0.5rem;
+font-family: tahoma;
+font-size: 0.8rem;
+text-align: center;
+font-weight: bold;
+margin-right: 67rem;
+margin-top: -3.5rem;
+border-radius: 1rem;
+box-shadow: 1px 1px 5px #afa6a6;
+}
+/* main pooster from 538 to 559 */
+.poosterPartTop{
+display: flex;
+justify-content: center;
+margin-top: 10rem;
+margin-bottom: 1rem;
+}
+.pooster{
+display: flex;
+gap: 1rem;
+}
+.poosterImage{
+width: 29rem;
+border-radius: 2rem;
+box-shadow: 2px 2px 5px #a1a1a7;
+}
+.poosterPartBottom{
+display: flex;
+justify-content: center;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+/* brands from 560to 584 */
+.brandsMenu{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 0.5rem;
+list-style-type: none;
+margin-bottom: 1rem;
+}
+.logoText{
+font-size: 2.5rem;
+font-family: 'vazir';
+font-weight: bolder;
+padding: 1rem;
+color: #3f4064;
+text-align: center;
+text-shadow: 1px 2px 4px #c0c2c5;
+}
+.bi-stars{
+color: gold;
+}
+.brandsLogo{
+width: 4rem;
+border-radius: 100%;
+}
+/* mahsoolat from 286 to 609 */
+.mahsoolat{
+display: flex;
+border-radius: 1rem;
+border: 1px solid #c0c2c5;
+align-items: center;
+justify-content: center;
+margin-right: 1rem;
+margin-left: 1rem;
+
+}
+.cover ,.mobile , .watch , .handsfree {
+padding-right: 1.5rem;
+border-left: 1px solid #e0e2e6;
+}
+.mahsoolTitel{
+font-size: 1.5rem;
+text-align: start;
+padding-top: 1rem;
+}
+.mahsoolText{
+color: #afa6a6;
+font-size: 0.8rem;
+text-align: start;
+}
+/* end main */
+/* footer from 611 to  */
+footer{
+margin-top: 3rem;
+display: flex;
+width: 84rem;
+height: 17rem;
+border-top: 1px solid #ee384e;
+border-radius:2rem 1rem 0 0 ;
+margin: 1rem 1rem 1rem;
+}
+.footerLogo{
+margin-top: 2rem;
+margin-right: 1rem;
+}
+.address{
+display: flex; 
+list-style-type: none;
+gap: 3rem;
+font-size: 0.8rem;
+}
+.addressTextTwo , .addressText{
+padding-right: 1rem;
+margin-top: 1rem;
+}
+.addressTextTwo {
+border-right: 1px solid #c0c2c5;
+}
+.btnBack{
+float: left;
+margin-top: -7rem;  
+}
+#backBtn{
+display: inline-block;
+background-color: #ebedf1;
+width: 8rem;
+height: 2.5rem;
+border-radius: 1rem;
+border: none;
+text-align: center;
+font-size: 0.8rem;
+box-shadow: 1px 2px 5px #c0c2c5;
+}
+.bi-arrow-90deg-up{
+position: absolute;
+margin-right: -1.8rem;
+margin-top: 0.4rem;
+color: #131414;
+font-weight: bolder;
+}
+.bi-arrow-90deg-up:hover{
+color: #b80c0c;
+cursor: pointer;
+}
+.servicerMenu{
+display: flex;
+float: left;
+gap: 2rem;
+margin-top: 3rem;  
+align-items: center; 
+text-align: center;
+margin-left: 3rem;
+}
+.serviceText{
+font-size: 0.8rem;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot');
+    src : url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+
+/* responsive */
+@media screen and (max-width: 992px){
+.navigation{
+display: none;
+}
+.brands , .mahsoolText , .btnBack ,.offPrice ,.offerText
+ ,.offerMainIcon , .sabadKharid  , .signIcon
+,.profiles ,.textSign ,.iconsText{
+ display: none;   
+}
+.pooster{
+flex-direction: column;
+}
+.mahsoolat {
+flex-direction: column;
+}
+.poosterImage{
+margin-right: 19rem;
+width: 55rem;
+}
+.cover ,.mobile , .watch , .handsfree {
+border-left: none;
+}
+.mahsoolTitel{
+font-size: 2rem;
+text-align: center;
+}
+.footerTop {
+margin: 3rem 20rem 1rem;
+}
+.footerLogo{
+margin-right: 4rem;
+width: 30rem;
+}
+.offer{
+height: 28rem;
+margin-right: 15rem;
+width: 50rem;
+margin-top: 7rem;
+}
+.imagePart {
+width: 8rem;
+}
+.iconsImg{
+margin-right: 33rem;
+width: 5rem;
+}
+.offerMenu{
+flex-wrap: wrap;
+margin-right: 9rem;
+margin-top: -15rem;
+gap: 0.5rem;
+}
+.offerItem{
+height: 11rem;
+width: 12rem;
+}
+}
+   
+/* grid part */
+.container {
+width: 100%;
+padding-right: 1rem;
+padding-left: 1rem;
+margin-right:-1rem;
+margin-left: -1rem;
+}
+@media (max-width: 576px) {
+    .container {
+        width: 36rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 48rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 62rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 75rem;
+    }
+}
+@media (max-width: 1326px) {
+    .container {
+        width:100%;
+    }
+}
+
